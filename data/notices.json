@@ -1,0 +1,110 @@
+[
+  {
+    "id": "notice-001",
+    "title": "Fall 2026 Course Add/Drop and Late Registration Deadlines",
+    "publishedDate": "2026-08-10T09:00:00Z",
+    "category": "Registration",
+    "audience": "students",
+    "body": "The Office of the Academic Registrar announces that the formal course registration window for the Fall 2026 semester will open on Monday, August 17 at 8:00 AM. All undergraduate and postgraduate students must complete their core and elective enrollments via the Student Portal before the portal closes on Friday, August 28 at 11:59 PM.\n\nStudents seeking to add or drop elective courses after August 28 may do so during the late registration period extending through September 4. Please note that a late administrative fee of $50 will be charged to your student ledger for any course modifications submitted after August 28 unless accompanied by prior written approval from your Department Head.\n\nAny student encountering prerequisite clearance errors, credit overload limits, or course clash warnings must submit a signed Special Enrollment Approval Form to the Academic Records Counter in Hall A, Room 102.",
+    "isRevisionOf": null
+  },
+  {
+    "id": "notice-002",
+    "title": "Hands-on Machine Learning & Robotics Hardware Workshop",
+    "publishedDate": "2026-08-14T14:30:00Z",
+    "category": "Workshop",
+    "audience": "students",
+    "body": "The Department of Electrical Engineering & Computer Science, in collaboration with the Robotics Club, is hosting an intensive weekend workshop titled 'Applied Edge AI and Embedded Robotics' on Saturday, August 29, from 10:00 AM to 4:00 PM.\n\nThe workshop will take place in the Turing Computing Block, Room 204. Registered attendees must bring their own laptops with Ubuntu 22.04 LTS or macOS and have Python 3.10+ and PyTorch pre-installed. Microcontroller kits and sensor modules will be provided during the session.\n\nRegistration is strictly limited to 40 participants on a first-come, first-served basis. A refundable kit deposit of $20 is required upon check-in at the venue on Saturday morning.",
+    "isRevisionOf": null
+  },
+  {
+    "id": "notice-003",
+    "title": "Central Library Extended Exam Hours & Quiet Zone Policy Enforcement",
+    "publishedDate": "2026-08-18T11:00:00Z",
+    "category": "Facilities",
+    "audience": "students",
+    "body": "In preparation for the upcoming mid-semester assessment period, the Central Library will operate under 24/7 continuous access starting Monday, August 24, through Friday, September 18. Student ID cards must be tapped at the main turnstiles for entry after 10:00 PM.\n\nLevels 3 and 4 have been designated as Strict Silent Study Zones. Mobile phone conversations, group discussions, and consumption of hot meals are strictly prohibited on these floors. Security marshals will monitor the zones and issue disciplinary citations for repeated disturbances.\n\nThe Ground Floor Collaborative Hub and Cafe Annex will remain open around the clock for group study and discussions, with complimentary coffee dispensers active between midnight and 6:00 AM.",
+    "isRevisionOf": null
+  },
+  {
+    "id": "notice-004",
+    "title": "AeroDesign & Autonomous Drone Club Recruitment 2026",
+    "publishedDate": "2026-08-20T16:00:00Z",
+    "category": "Clubs",
+    "audience": "students",
+    "body": "The University AeroDesign Society is seeking motivated student engineers, programmers, and project managers for the 2026-2027 competitive season. We represent the university in international UAV and autonomous drone challenges.\n\nOpen technical sub-teams include Aerodynamics & CAD, Avionics & Embedded Firmware, Computer Vision, and Power Systems. No prior collegiate competition experience is required, though demonstrated enthusiasm in CAD modeling or C++/Python programming is encouraged.\n\nInformational orientation and team tryout briefings will be held on Thursday, August 27 at 6:30 PM in the Mechanical Engineering Seminar Hall (Room 115). Online application forms must be submitted through the student activities portal by August 30.",
+    "isRevisionOf": null
+  },
+  {
+    "id": "notice-005",
+    "title": "UPDATE & VENUE CHANGE: Machine Learning & Robotics Workshop Relocated to Innovation Lab Room 310",
+    "publishedDate": "2026-08-25T10:15:00Z",
+    "category": "Workshop",
+    "audience": "students",
+    "body": "IMPORTANT UPDATE: Please be advised that the 'Applied Edge AI and Embedded Robotics' weekend workshop scheduled for Saturday, August 29, 2026, has been relocated from Turing Computing Block Room 204 to the Innovation Makerspace Lab, Room 310 (3rd Floor, Engineering Complex).\n\nDue to power capacity upgrades and high workstation demand, Room 204 will remain closed for maintenance. The new venue in Room 310 provides dual-monitor workstations and dedicated high-current DC power benches for all 40 participants.\n\nThe workshop timing remains unchanged: 10:00 AM to 4:00 PM. Please proceed directly to Room 310 on Saturday morning. Check-in and hardware kit distribution will commence at 9:30 AM outside Room 310.",
+    "isRevisionOf": "notice-002"
+  },
+  {
+    "id": "notice-006",
+    "title": "Midterm Examination Hall Regulations, Prohibited Items & Seating Guidelines",
+    "publishedDate": "2026-08-26T08:30:00Z",
+    "category": "Exams",
+    "audience": "students",
+    "body": "The University Examination Board has published mandatory compliance rules for all mid-semester assessments running from September 7 through September 18, 2026. Students must occupy their assigned numbered seats at least 15 minutes prior to the commencement of each paper.\n\nStrictly prohibited items inside the exam halls include smartwatches, programmable calculators, fitness bands, earphones, and any unauthorized scrap paper. Mobile phones must be completely switched off and placed inside designated lockers outside the hall before entering.\n\nStudents must display their valid physical University Photo ID card and stamped admit slip on the top-right corner of their examination desk throughout the exam duration. Candidates arriving more than 30 minutes late will not be admitted under any circumstances.",
+    "isRevisionOf": null
+  },
+  {
+    "id": "notice-007",
+    "title": "Mandatory Annual Hostel Room Inspection and Safety Compliance Schedule",
+    "publishedDate": "2026-08-27T13:00:00Z",
+    "category": "Hostel",
+    "audience": "students",
+    "body": "The Campus Residential Housing Authority will conduct the annual room safety and asset verification audit across all North and South Quad hostel blocks between September 1 and September 5, 2026.\n\nInspections will evaluate electrical safety and fire hazard prevention. High-wattage heating appliances including induction cooktops, electric room heaters, and uncertified immersion rods are strictly forbidden and will be confiscated with administrative fines levied.\n\nResidents are required to ensure clear passageways and unlocked secondary wardrobes during designated inspection hours (9:00 AM to 1:00 PM). Wardens and residential advisors will accompany facility technicians at all times during room entries.",
+    "isRevisionOf": null
+  },
+  {
+    "id": "notice-008",
+    "title": "Academic Year 2026-27 Semester Fee Payment Instructions & Waiver Deadlines",
+    "publishedDate": "2026-08-28T10:00:00Z",
+    "category": "Finance",
+    "audience": "students",
+    "body": "The Office of Financial Services reminds all continuing undergraduate and graduate students that the deadline for Fall 2026 tuition, laboratory, and campus facility fee clearance is Friday, September 11, 2026 at 5:00 PM.\n\nPayments must be made through the official Campus Pay Portal using authorized wire transfer, credit/debit card, or electronic check. Cash payments will not be accepted at the cashier counter. Surcharges of 2% weekly compound interest will apply to overdue balances starting September 12.\n\nApplications for need-based fee installments or emergency student tuition deferrals must be submitted to the Student Aid Commission along with family income verification certificates no later than September 4.",
+    "isRevisionOf": null
+  },
+  {
+    "id": "notice-009",
+    "title": "Varsity Badminton and Basketball Team Tryouts & Medical Clearance Requirements",
+    "publishedDate": "2026-08-29T15:00:00Z",
+    "category": "Sports",
+    "audience": "students",
+    "body": "The University Athletics Department invites all eligible students to attend open tryouts for the Men's and Women's Varsity Badminton and Basketball teams for the 2026-27 inter-collegiate championship tour.\n\nTryouts will take place at the Sports Complex Indoor Arena on Tuesday, September 8 and Wednesday, September 9, from 5:30 PM to 8:30 PM. Participants must wear non-marking indoor court shoes and appropriate athletic gear.\n\nAll student athletes must submit a valid Sports Medical Clearance Certificate signed by the Campus Health Center prior to entering the court. Health clearance forms can be completed at the University Clinic between 8:00 AM and 2:00 PM on weekdays.",
+    "isRevisionOf": null
+  },
+  {
+    "id": "notice-010",
+    "title": "Senior Undergraduate & Graduate Thesis Formatting, LaTeX Template & Submission Guidelines",
+    "publishedDate": "2026-08-30T12:00:00Z",
+    "category": "Academics",
+    "audience": "students",
+    "body": "The Graduate Studies Committee has released the standardized 2026 thesis and capstone project formatting guidelines. All graduating bachelor's, master's, and doctoral candidates submitting their final manuscripts must strictly adhere to the official university document style.\n\nThe official Overleaf LaTeX template and Microsoft Word thesis package are now available for direct download on the academic resources repository. Submissions must maintain 1.5 line spacing, 1-inch margins, IEEE or APA citation formatting, and include the signed plagiarism declaration form.\n\nPreliminary thesis digital copies must be uploaded to the Thesis Portal for automated similarity checking via Turnitin by October 15, 2026, 5:00 PM. Hardbound copies for the library archive will be requested upon final defense approval.",
+    "isRevisionOf": null
+  },
+  {
+    "id": "notice-staff-001",
+    "title": "INTERNAL: Faculty & Staff Exam Proctoring Remuneration & Invigilation Guidelines",
+    "publishedDate": "2026-08-31T09:00:00Z",
+    "category": "Administration",
+    "audience": "staff",
+    "body": "STAFF ONLY: The Office of Human Resources and Academic Affairs has issued updated hourly remuneration tariffs for faculty invigilation duties during the Fall 2026 midterm examination cycle. Senior invigilators will receive an adjusted rate of $65/hour, while assistant proctors receive $45/hour.\n\nAll assigned invigilators must report to the Central Examination Dispatch Office (Hall C, Room 10) at least 30 minutes prior to paper distribution to collect verified seating rosters and tamper-evident script pouches.",
+    "isRevisionOf": null
+  },
+  {
+    "id": "notice-staff-002",
+    "title": "CONFIDENTIAL: Departmental Capital Equipment Procurement & FY27 Budget Allocations",
+    "publishedDate": "2026-09-01T14:00:00Z",
+    "category": "Administration",
+    "audience": "staff",
+    "body": "FACULTY & STAFF MEMORANDUM: Department heads and principal investigators must finalize all major laboratory hardware purchase requisitions exceeding $5,000 before the end-of-quarter fiscal reconciliation deadline on September 25, 2026.\n\nCapital expenditure grants for FY27 must be submitted through the Enterprise Resource Portal along with three competitive vendor quotations and energy efficiency certifications.",
+    "isRevisionOf": null
+  }
+]
