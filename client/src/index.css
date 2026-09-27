@@ -14,7 +14,7 @@ html.light {
   --bg-primary: #f8fafc;
   --text-primary: #0f172a;
   --text-secondary: #334155;
-  --text-muted: #475569;
+  --text-muted: #64748b;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,7 +34,7 @@ body {
   line-height: 1.6;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbars */
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
@@ -57,7 +57,7 @@ html.light ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
 }
 
-/* Animations */
+/* Subtle animations */
 @keyframes pulse-subtle {
   0%, 100% {
     opacity: 1;
@@ -82,7 +82,7 @@ html.light ::-webkit-scrollbar-thumb {
   animation: scan-beam 1.8s infinite linear;
 }
 
-/* Glass Panels - Adaptive Dark & Daylight */
+/* Glass Panels (Default Dark Mode) */
 .glass-panel {
   background: rgba(15, 23, 42, 0.75);
   backdrop-filter: blur(16px);
@@ -131,21 +131,25 @@ html.light ::-webkit-scrollbar-thumb {
   box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
 }
 
-/* ========================================================= */
-/* DAY LIGHT MODE OVERRIDES (Crisp, High-Contrast Sunlight)   */
-/* ========================================================= */
+/* ========================================================================== */
+/* REFINED DAY LIGHT MODE (Crisp Notion/Linear Aesthetic · Rich Jewel Tones)   */
+/* ========================================================================== */
+
 html.light body {
   background-color: #f8fafc;
   color: #0f172a;
 }
 
-html.light .bg-slate-950 {
-  background-color: #f8fafc !important;
+/* Header & Navigation */
+html.light header {
+  background-color: rgba(255, 255, 255, 0.88) !important;
+  border-bottom-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
-html.light .bg-slate-950\/80 {
-  background-color: rgba(248, 250, 252, 0.92) !important;
-  border-color: #e2e8f0 !important;
+/* Base Surfaces & Cards */
+html.light .bg-slate-950 {
+  background-color: #f8fafc !important;
 }
 
 html.light .bg-slate-900 {
@@ -155,8 +159,9 @@ html.light .bg-slate-900 {
 html.light .bg-slate-900\/90,
 html.light .bg-slate-900\/80,
 html.light .bg-slate-900\/70,
+html.light .bg-slate-900\/60,
 html.light .bg-slate-900\/50 {
-  background-color: rgba(255, 255, 255, 0.95) !important;
+  background-color: #ffffff !important;
 }
 
 html.light .bg-slate-900\/40,
@@ -166,17 +171,45 @@ html.light .bg-slate-800\/40 {
 }
 
 html.light .bg-slate-800 {
-  background-color: #e2e8f0 !important;
+  background-color: #f1f5f9 !important;
 }
 
+/* Inner passage boxes */
+html.light .bg-slate-950\/70,
+html.light .bg-slate-950\/80,
+html.light .bg-slate-950\/50,
+html.light .bg-slate-950\/90 {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Borders */
 html.light .border-slate-800,
 html.light .border-slate-800\/80,
 html.light .border-slate-800\/60,
+html.light .border-slate-800\/50,
 html.light .border-slate-900 {
   border-color: #e2e8f0 !important;
 }
 
-html.light .text-white {
+/* Glass Panels in Light Mode */
+html.light .glass-panel {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04) !important;
+}
+
+html.light .glass-panel-emerald {
+  background: #f0fdf4 !important;
+  border-color: #bbf7d0 !important;
+  box-shadow: 0 4px 20px -2px rgba(16, 185, 129, 0.08) !important;
+}
+
+/* Typography in Light Mode */
+html.light h1:not(.keep-white),
+html.light h2:not(.keep-white),
+html.light h3:not(.keep-white),
+html.light h4:not(.keep-white) {
   color: #0f172a !important;
 }
 
@@ -200,39 +233,130 @@ html.light .text-slate-500 {
   color: #64748b !important;
 }
 
-html.light .glass-panel {
-  background: rgba(255, 255, 255, 0.94) !important;
+/* Hero Title Gradient in Light Mode (Deep Jewel Tones for Rich Visibility) */
+html.light .bg-clip-text {
+  background-image: linear-gradient(135deg, #047857 0%, #0f766e 50%, #0369a1 100%) !important;
+}
+
+/* Jewel Accent Colors for Light Mode (High Contrast, Never Washed Out) */
+html.light .text-emerald-400,
+html.light .text-emerald-300 {
+  color: #047857 !important;
+}
+
+html.light .text-cyan-400,
+html.light .text-cyan-300 {
+  color: #0369a1 !important;
+}
+
+html.light .text-teal-400,
+html.light .text-teal-300 {
+  color: #0f766e !important;
+}
+
+html.light .text-amber-400,
+html.light .text-amber-300 {
+  color: #b45309 !important;
+}
+
+html.light .text-rose-400,
+html.light .text-rose-300 {
+  color: #be123c !important;
+}
+
+html.light .text-purple-400,
+html.light .text-purple-300 {
+  color: #6d28d9 !important;
+}
+
+/* Badge Backgrounds in Light Mode */
+html.light .bg-emerald-500\/10,
+html.light .bg-emerald-500\/20 {
+  background-color: #ecfdf5 !important;
+  border-color: #a7f3d0 !important;
+  color: #065f46 !important;
+}
+
+html.light .bg-cyan-500\/10,
+html.light .bg-cyan-500\/20 {
+  background-color: #f0f9ff !important;
+  border-color: #bae6fd !important;
+  color: #0369a1 !important;
+}
+
+html.light .bg-amber-500\/10,
+html.light .bg-amber-500\/20 {
+  background-color: #fffbeb !important;
+  border-color: #fde68a !important;
+  color: #92400e !important;
+}
+
+html.light .bg-rose-500\/15,
+html.light .bg-rose-500\/10 {
+  background-color: #fff1f2 !important;
+  border-color: #fecdd3 !important;
+  color: #9f1239 !important;
+}
+
+html.light .bg-purple-500\/10,
+html.light .bg-purple-500\/20 {
+  background-color: #faf5ff !important;
+  border-color: #e9d5ff !important;
+  color: #6b21a8 !important;
+}
+
+/* Search Bar Input & Form */
+html.light input {
+  color: #0f172a !important;
+}
+
+html.light input::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Primary Search Action Button: ALWAYS White Text on Emerald Gradient */
+html.light button[type="submit"],
+html.light .btn-primary {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #059669 0%, #0d9488 100%) !important;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25) !important;
+}
+
+html.light button[type="submit"] * {
+  color: #ffffff !important;
+}
+
+/* Quick Chips */
+html.light .bg-slate-900\/60 {
+  background-color: #ffffff !important;
   border-color: #e2e8f0 !important;
-  box-shadow: 0 10px 30px -4px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.04) !important;
 }
 
-html.light .glass-panel-emerald {
-  background: rgba(236, 253, 245, 0.92) !important;
-  border-color: rgba(5, 150, 105, 0.3) !important;
-  box-shadow: 0 10px 30px -4px rgba(5, 150, 105, 0.08) !important;
+html.light .bg-slate-900\/60:hover {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
 }
 
+/* Highlight Tokens */
 html.light .highlight-match {
-  background-color: rgba(16, 185, 129, 0.18);
+  background-color: #d1fae5;
   color: #065f46;
   border-bottom: 2px solid #059669;
 }
 
 html.light .highlight-diff-old {
   background-color: #fee2e2;
-  color: #b91c1c;
+  color: #991b1b;
 }
 
 html.light .highlight-diff-new {
-  background-color: #d1fae5;
-  color: #047857;
-  box-shadow: 0 0 10px rgba(5, 150, 105, 0.18);
+  background-color: #dcfce7;
+  color: #15803d;
+  box-shadow: 0 0 10px rgba(22, 163, 74, 0.15);
 }
 
-html.light input {
-  color: #0f172a !important;
-}
-
-html.light input::placeholder {
-  color: #64748b !important;
+/* Footer */
+html.light footer {
+  background-color: #f8fafc !important;
+  border-top-color: #e2e8f0 !important;
 }
