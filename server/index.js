@@ -75,5 +75,11 @@ function startServer(port) {
   });
 }
 
-startServer(DEFAULT_PORT);
+// Only start direct listener when not in Vercel serverless environment
+if (!process.env.VERCEL) {
+  startServer(DEFAULT_PORT);
+}
+
+export default app;
+
 
