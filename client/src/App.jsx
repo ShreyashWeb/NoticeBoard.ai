@@ -15,6 +15,7 @@ import DebugInspector from './components/DebugInspector';
 import InsightsPanel from './components/InsightsPanel';
 
 const SESSION_STORAGE_KEY = 'noticeboard_query_history';
+const API_BASE = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '');
 
 export default function App() {
   const [query, setQuery] = useState('');
@@ -57,8 +58,8 @@ export default function App() {
     async function loadInitialData() {
       try {
         const [healthRes, noticesRes] = await Promise.all([
-          fetch('/api/health').then(r => r.json()),
-          fetch('/api/notices').then(r => r.json())
+          fetch(`${API_BASE}/api/health`).then(r => r.json()),
+          fetch(`${API_BASE}/api/notices`).then(r => r.json())
         ]);
         setServerStatus(healthRes);
         if (noticesRes?.notices) {
@@ -68,6 +69,7 @@ export default function App() {
     }
     loadInitialData();
   }, []);
+
 
   // Demo Reset Action
   const handleResetDemo = useCallback(() => {
@@ -182,13 +184,14 @@ export default function App() {
     try {
       // 350ms minimum for perceptual AI shimmer deliberation
       const [res] = await Promise.all([
-        fetch('/api/search', {
+        fetch(`${API_BASE}/api/search`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ q, audience })
         }).then(r => r.json()),
         new Promise(resolve => setTimeout(resolve, 350))
       ]);
+
 
       const endTime = performance.now();
       setSearchLatency(Math.round(endTime - startTime));
