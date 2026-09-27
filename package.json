@@ -8,10 +8,11 @@
     "dev": "concurrently -n \"server,client\" -c \"cyan.bold,emerald.bold\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
     "server": "npm --prefix server run dev",
     "client": "npm --prefix client run dev",
-    "build": "npm --prefix client install && npm --prefix client run build",
-    "postinstall": "npm --prefix client install && npm --prefix client run build",
+    "build": "npm --prefix client install && npm --prefix client run build && node -e \"import('fs').then(fs => fs.cpSync('client/dist', 'dist', {recursive: true}))\"",
+    "postinstall": "npm --prefix client install && npm --prefix client run build && node -e \"import('fs').then(fs => fs.cpSync('client/dist', 'dist', {recursive: true}))\"",
     "render-build": "npm install && npm --prefix server install && npm --prefix client install && npm --prefix client run build",
     "start": "node server/index.js"
+
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
