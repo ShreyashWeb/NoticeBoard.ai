@@ -13,8 +13,10 @@ import EmptyState from './components/EmptyState';
 import BrowseDrawer from './components/BrowseDrawer';
 import DebugInspector from './components/DebugInspector';
 import InsightsPanel from './components/InsightsPanel';
+import HappyPathSection from './components/HappyPathSection';
 
 const SESSION_STORAGE_KEY = 'noticeboard_query_history';
+const THEME_STORAGE_KEY = 'noticeboard_theme';
 const API_BASE = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '');
 
 export default function App() {
@@ -32,9 +34,38 @@ export default function App() {
   const [isInsightsOpen, setIsInsightsOpen] = useState(false);
   const [audience, setAudience] = useState('students');
   const [toastMessage, setToastMessage] = useState(null);
+
+  // Day Light / Dark Mode Theme
+  const [theme, setTheme] = useState(() => {
+    try {
+      return localStorage.getItem(THEME_STORAGE_KEY) || 'dark';
+    } catch {
+      return 'dark';
+    }
+  });
+
+  // Sync theme with HTML root class
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme === 'light') {
+      root.classList.remove('dark');
+      root.classList.add('light');
+    } else {
+      root.classList.remove('light');
+      root.classList.add('dark');
+    }
+    try {
+      localStorage.setItem(THEME_STORAGE_KEY, theme);
+    } catch {}
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'dark' ? 'light' : 'dark');
+  };
   
   // Feedback state for in-memory active learning
   const [feedbackMap, setFeedbackMap] = useState({});
+
 
   // Session stats for insights panel
   const [sessionStats, setSessionStats] = useState({
@@ -247,11 +278,11 @@ export default function App() {
   const staffCount = allNotices.filter(n => n.audience === 'staff').length || 2;
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col selection:bg-emerald-500/20 selection:text-emerald-300 font-sans">
+    <div className={`min-h-screen ${theme === 'light' ? 'bg-slate-50 text-slate-900' : 'bg-slate-950 text-slate-100'} flex flex-col selection:bg-emerald-500/20 selection:text-emerald-300 font-sans transition-colors duration-200`}>
       {/* Radial glow background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-gradient-to-b from-emerald-500/10 via-teal-500/5 to-transparent blur-3xl opacity-70"></div>
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-emerald-950/20 blur-3xl rounded-full"></div>
+        <div className={`absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[500px] ${theme === 'light' ? 'bg-gradient-to-b from-emerald-500/15 via-amber-500/10 to-transparent' : 'bg-gradient-to-b from-emerald-500/10 via-teal-500/5 to-transparent'} blur-3xl opacity-75`}></div>
+        <div className={`absolute bottom-0 right-0 w-[400px] h-[400px] ${theme === 'light' ? 'bg-emerald-200/30' : 'bg-emerald-950/20'} blur-3xl rounded-full`}></div>
       </div>
 
       {/* Floating Demo Reset / Feedback Toast */}
@@ -275,7 +306,10 @@ export default function App() {
         onResetDemo={handleResetDemo}
         serverStatus={serverStatus}
         noticeCount={allNotices.length}
+        theme={theme}
+        onToggleTheme={toggleTheme}
       />
+
 
       {/* Main Content Area */}
       <main className="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 pt-4 pb-20 relative z-10 flex flex-col">
@@ -361,10 +395,21 @@ export default function App() {
             audience={audience}
             onToggleAudience={() => setAudience(audience === 'students' ? 'staff' : 'students')}
           />
+
+          {/* Feature: Interactive Happy Path Explainer on Landing Page */}
+          {!hasSearched && (
+            <HappyPathSection
+              onSelectQuery={(q) => {
+                setQuery(q);
+                handleSearch(q);
+              }}
+            />
+          )}
         </section>
 
         {/* Dynamic Results Section */}
         <section className="w-full max-w-3xl mx-auto flex-1">
+
           <AnimatePresence mode="wait">
             {/* 1. Loading AI Shimmer State */}
             {isLoading && (

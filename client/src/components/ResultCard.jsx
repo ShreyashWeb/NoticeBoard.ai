@@ -106,12 +106,13 @@ export default function ResultCard({
       </h3>
 
       {/* Extracted Passage Card */}
-      <div className="p-3.5 rounded-xl bg-slate-950/70 border border-slate-800/80 text-sm text-slate-200 leading-relaxed font-sans shadow-inner">
-        <div className="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider mb-1.5 flex items-center gap-1">
-          <Sparkles className="w-3 h-3 text-emerald-400" /> Answering Passage:
+      <div className="p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 text-[15px] sm:text-base text-slate-100 font-medium leading-relaxed font-sans shadow-inner">
+        <div className="text-[11px] font-mono text-emerald-400 font-bold uppercase tracking-wider mb-2 flex items-center gap-1.5">
+          <Sparkles className="w-3.5 h-3.5 text-emerald-400" /> Answering Passage:
         </div>
         <HighlightedPassage text={result.passage} query={query} />
       </div>
+
 
       {/* "Why this match" Explainability Pill */}
       <div className="mt-3">

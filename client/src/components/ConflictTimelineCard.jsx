@@ -182,9 +182,9 @@ export default function ConflictTimelineCard({
               {currentNotice.title}
             </h4>
 
-            <div className="p-3.5 rounded-lg bg-slate-950/80 border border-emerald-500/30 text-sm text-slate-100 leading-relaxed shadow-inner">
-              <div className="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider mb-1 flex items-center gap-1">
-                <Sparkles className="w-3 h-3 text-emerald-400" /> Latest Verified Information:
+            <div className="p-4 rounded-lg bg-slate-950/80 border border-emerald-500/30 text-[15px] sm:text-base text-slate-100 font-medium leading-relaxed shadow-inner">
+              <div className="text-[11px] font-mono text-emerald-400 font-bold uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-emerald-400" /> Latest Verified Information:
               </div>
               <HighlightedPassage text={currentNotice.passage} query={query} />
             </div>
